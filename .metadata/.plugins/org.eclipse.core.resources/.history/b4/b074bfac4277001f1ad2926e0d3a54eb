@@ -1,0 +1,41 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import dao.ClientesDao;
+import entities.Cliente;
+
+
+@Service
+public class Clientes implements HotelesService {	
+	
+	 
+	ClientesDao hotelesDao;
+	
+	
+	public Clientes(ClientesDao hotelesDao) {
+		super();
+		this.hotelesDao = hotelesDao;
+	}
+
+
+	public Cliente findById(int idHotel) {
+		return hotelesDao.findById(idHotel) //Optional<Hotel>			 
+				.orElse(null); 		
+	};	
+	
+	
+	public List<Cliente> findByLocalizacion(String localizacion){
+		return hotelesDao.findByLocalizacion(localizacion) 
+				.stream() 	 
+				.toList();		
+	}
+	
+ 
+ 
+}
+
+
+ 

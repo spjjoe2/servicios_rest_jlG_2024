@@ -1,0 +1,12 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import entities.Cliente;
+
+public interface ClientesDao extends JpaRepository<Cliente,Integer>{	 
+	
+	List<Cliente> findByLocalizacion(String localizacion);
+}

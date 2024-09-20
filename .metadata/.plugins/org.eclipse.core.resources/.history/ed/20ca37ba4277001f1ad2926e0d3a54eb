@@ -1,0 +1,13 @@
+package service;
+
+import java.util.List;
+
+import entities.Cliente;
+
+ 
+public interface HotelesService { 	
+	
+	Cliente findById(int idHotel);	
+	List<Cliente> findByLocalizacion(String localizacion);
+
+}

@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
 import entities.Resultado;
+import init.entities.Libro;
 
 public interface BuscadorDao extends JpaRepository<Resultado,Integer>{
 	List<Resultado> findByTematica(String tematica);
@@ -16,3 +17,5 @@ public interface BuscadorDao extends JpaRepository<Resultado,Integer>{
 	@Modifying
 	void deleteByUrl(String url);
 }
+
+ 
