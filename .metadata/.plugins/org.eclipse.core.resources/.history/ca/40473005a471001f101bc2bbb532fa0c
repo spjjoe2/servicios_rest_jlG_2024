@@ -1,0 +1,46 @@
+package model;
+
+public class Libreria {
+	
+	private String titulo;
+	private String tematica;
+	private double precio;	
+	private String clasificacion;
+	public Libreria() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Libreria(String titulo, String tematica, double precio, String clasificacion) {
+		super();
+		this.titulo = titulo;
+		this.tematica = tematica;
+		this.precio = precio;
+		this.clasificacion = clasificacion;
+	}
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String getTematica() {
+		return tematica;
+	}
+	public void setTematica(String tematica) {
+		this.tematica = tematica;
+	}
+	public double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	public String getClasificacion() {
+		return clasificacion;
+	}
+	public void setClasificacion(String clasificacion) {
+		this.clasificacion = clasificacion;
+	}
+	
+
+}

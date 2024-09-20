@@ -1,0 +1,10 @@
+package model;
+
+public class Libreria {
+	
+	private String titulo;
+	private String tematica;
+	private double precio;	
+	private String clasificacion;
+
+}

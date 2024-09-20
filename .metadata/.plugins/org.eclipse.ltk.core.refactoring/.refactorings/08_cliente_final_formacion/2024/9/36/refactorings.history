@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;buscador.html&apos; to &apos;webapp&apos;&#x0D;&#x0A;- Original project: &apos;08_cliente_final_formacion&apos;&#x0D;&#x0A;- Destination element: &apos;webapp&apos;&#x0D;&#x0A;- Original element: &apos;buscador.html&apos;" description="Copy file" element1="public/buscador.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1725364648606" target="/09_cliente_final_formacion/src/main/webapp" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+package service;
+
+import java.util.List;
+
+import model.ResultadoDto;
+
+public interface LibreriaService {
+	List<BookDto> buscarPorRgPrecios(double precioMin, double precioMax);
+
+}

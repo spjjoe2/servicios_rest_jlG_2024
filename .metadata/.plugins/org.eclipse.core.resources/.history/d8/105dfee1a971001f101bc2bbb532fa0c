@@ -1,0 +1,10 @@
+package init.service;
+
+import java.util.List;
+
+import model.BookDto;
+
+public interface LibreriaService {
+	List<Boo> buscarPorRgPrecios(x);
+
+}

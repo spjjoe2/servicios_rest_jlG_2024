@@ -1,0 +1,4 @@
+spring.application.name=32_microservicio_hoteles
+
+server.port=8000
+server.servlet.context-path=/hoteles

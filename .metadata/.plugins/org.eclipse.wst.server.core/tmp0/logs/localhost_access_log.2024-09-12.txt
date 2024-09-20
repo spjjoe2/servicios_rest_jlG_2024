@@ -1,0 +1,11 @@
+127.0.0.1 - - [12/Sep/2024:12:16:05 +0200] "GET / HTTP/1.1" 404 688
+127.0.0.1 - - [12/Sep/2024:12:16:05 +0200] "GET /cliente_angular/index.html HTTP/1.1" 200 794
+127.0.0.1 - - [12/Sep/2024:12:16:05 +0200] "GET /cliente_angular/styles-5INURTSO.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2024:12:16:05 +0200] "GET /cliente_angular/main-OKHA7A4K.js HTTP/1.1" 200 273451
+127.0.0.1 - - [12/Sep/2024:12:16:05 +0200] "GET /cliente_angular/polyfills-SCHOHYNV.js HTTP/1.1" 200 34525
+127.0.0.1 - - [12/Sep/2024:12:16:06 +0200] "GET /cliente_angular/favicon.ico HTTP/1.1" 200 15086
+127.0.0.1 - - [12/Sep/2024:12:20:31 +0200] "GET / HTTP/1.1" 404 688
+127.0.0.1 - - [12/Sep/2024:12:23:36 +0200] "GET /cliente_angular/ HTTP/1.1" 200 794
+127.0.0.1 - - [12/Sep/2024:12:23:36 +0200] "GET /cliente_angular/styles-5INURTSO.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2024:12:23:36 +0200] "GET /cliente_angular/polyfills-SCHOHYNV.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2024:12:23:36 +0200] "GET /cliente_angular/main-OKHA7A4K.js HTTP/1.1" 304 -

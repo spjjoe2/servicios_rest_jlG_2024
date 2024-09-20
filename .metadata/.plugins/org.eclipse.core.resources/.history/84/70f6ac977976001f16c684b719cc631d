@@ -1,0 +1,34 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import dao.HotelesDao;
+import model.Hotel;
+
+
+@Service
+public class HotelService implements HotelServiceImpl {	
+	
+	 
+	HotelesDao hotelesDao;
+	
+	
+	Hotel findById(int idHotel) {
+		return hotelesDao.findById(idHotel) //Optional<Hotel>	
+				.orElse(null);;  		
+	};	
+	
+	
+	List<Hotel> findByLocalizacion(String localizacion){
+		return
+		
+	}
+	
+ 
+ 
+}
+
+
+ 

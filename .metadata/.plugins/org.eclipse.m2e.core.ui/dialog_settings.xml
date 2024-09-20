@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="07_servicio_formacion"/>
+			<item value="06_cliente_busacador"/>
+			<item value="05_app_cliente_ejemplo"/>
+			<item value="04_servicio_crud_cursos"/>
+			<item value="03_prototipo_buscador"/>
+			<item value="02_servicio_informacion"/>
+			<item value="01_ejemplo_rest"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="07_servicio_formacion"/>
+			<item value="06_cliente_busacador"/>
+			<item value="05_app_cliente_ejemplo"/>
+			<item value="04_servicio_crud_cursos"/>
+			<item value="03_prototipo_buscador"/>
+			<item value="02_servicio_informacion"/>
+			<item value="01_ejemplo_rest"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

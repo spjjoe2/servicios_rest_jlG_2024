@@ -1,0 +1,6 @@
+package init.utilidades;
+
+public class Mapeador {
+
+		public book jsonToBook(libroJson Libro)
+}
