@@ -1,13 +1,16 @@
 package controller;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import entities.Cliente;
+import entities.Cliente; 
 import service.ClientesService;
 
  
@@ -18,7 +21,7 @@ public class ClientesController {
 
 	ClientesService clientesService;
 
-	public ClientesController(ClientesService hotelesService) {
+	public ClientesController(ClientesService clientesService) {
 		super();
 		this.clientesService =  clientesService;
 	}
@@ -35,10 +38,14 @@ public class ClientesController {
 	
 		
 	@PostMapping(value="altaCliente",consumes=MediaType.APPLICATION_JSON_VALUE)
-	public void altaCliente(@PathVariable("cliente") Cliente cliente){
-		 clientesService.altaCliente(cliente); 
+	public ResponseEntity<Void> altaCliente(@RequestBody Cliente cliente){
+		if(clientesService.altaCliente(cliente)) {
+			return new ResponseEntity<>(HttpStatus.OK);
+		}
+		return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 		
 	}
 }
 
+ 
 

@@ -32,8 +32,14 @@ public class ClientesServiceImpl implements ClientesService {
 	} 
 	
 	
-	public void altaCliente(Cliente cliente) {
-		clientesDao.save(cliente);
+	public boolean altaCliente(Cliente cliente) {
+		 
+		
+		if(clientesDao.findById(cliente.getUsuario()).isEmpty())  {
+			clientesDao.save(cliente);
+			return true;
+		}
+		return false;
 	}
  
 }
