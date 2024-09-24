@@ -33,6 +33,10 @@ public class HotelesServiceImpl implements HotelesService {
 				.toList();		
 	}
 	
+	public List<String> findListaDestinos(){
+		return hotelesDao.findListaDestinos();
+	}
+	
  
  
 }

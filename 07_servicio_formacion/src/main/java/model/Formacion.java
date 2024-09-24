@@ -3,18 +3,17 @@ package model;
 public class Formacion {
 	private String nombre;
 	private String area;
-	private double duracion;
+	private int duracion;
 	private double precio;
-	public Formacion() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Formacion(String nombre, String area, double duracion, double precio) {
+	public Formacion(String nombre, String area, int duracion, double precio) {
 		super();
 		this.nombre = nombre;
 		this.area = area;
 		this.duracion = duracion;
 		this.precio = precio;
+	}
+	public Formacion() {
+		super();
 	}
 	public String getNombre() {
 		return nombre;
@@ -28,10 +27,10 @@ public class Formacion {
 	public void setArea(String area) {
 		this.area = area;
 	}
-	public double getDuracion() {
+	public int getDuracion() {
 		return duracion;
 	}
-	public void setDuracion(double duracion) {
+	public void setDuracion(int duracion) {
 		this.duracion = duracion;
 	}
 	public double getPrecio() {
@@ -40,7 +39,4 @@ public class Formacion {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-	
-	
-
 }

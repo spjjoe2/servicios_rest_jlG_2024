@@ -1,13 +1,14 @@
 package entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
- 
- 
 @Entity
 @Table(name="reservas")
 public class Reserva {
@@ -17,25 +18,30 @@ public class Reserva {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idReserva;
 	
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "hotel", referencedColumnName = "idHotel")
 	private Hotel hotel;
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "vuelo", referencedColumnName = "idvuelo")
 	private Vuelo vuelo;
+	
 	private double precio;
 	private String usuario;
- ;
-	
+ 
 	
 	public Reserva() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Reserva(int idReserva, Hotel hotel, Vuelo vuelo, double precio, String usuario) {
+	public Reserva(int idReserva,String usuario, Vuelo vuelo,Hotel hotel,double precio) {
 		super();
 		this.idReserva = idReserva;
-		this.hotel = hotel;
-		this.vuelo = vuelo;
-		this.precio = precio;
 		this.usuario = usuario;
+		this.vuelo = vuelo;	 
+		this.precio = precio;
 	}
+
+ 
 	public int getIdReserva() {
 		return idReserva;
 	}

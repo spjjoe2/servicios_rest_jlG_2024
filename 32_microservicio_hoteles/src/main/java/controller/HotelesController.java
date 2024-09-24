@@ -45,6 +45,11 @@ public class HotelesController {
 		}
 		
 	}
+	
+	@GetMapping(value="listadoDestinos",produces=MediaType.APPLICATION_JSON_VALUE)
+	public List<String> findListaDestinos(){
+		return hotelesService.findListaDestinos();
+	}
 }
 
 

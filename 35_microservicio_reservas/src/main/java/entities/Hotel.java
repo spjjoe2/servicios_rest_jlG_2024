@@ -16,16 +16,17 @@ public class Hotel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idHotel;
+	
 	private String nombre;
 	private int categoria;
 	private double precio;
-	private int disponible;
+	private boolean disponible;
 	private String localizacion;
 	public Hotel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Hotel(int idHotel, String nombre, int categoria, double precio, int disponible, String localizacion) {
+	public Hotel(int idHotel, String nombre, int categoria, double precio, boolean disponible, String localizacion) {
 		super();
 		this.idHotel = idHotel;
 		this.nombre = nombre;
@@ -58,10 +59,10 @@ public class Hotel {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-	public int getDisponible() {
+	public boolean isDisponible() {
 		return disponible;
 	}
-	public void setDisponible(int disponible) {
+	public void setDisponible(boolean disponible) {
 		this.disponible = disponible;
 	}
 	public String getLocalizacion() {

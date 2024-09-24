@@ -21,6 +21,7 @@ public class Hotel {
 	private double precio;
 	private int disponible;
 	private String localizacion;
+	
 	public Hotel() {
 		super();
 		// TODO Auto-generated constructor stub
