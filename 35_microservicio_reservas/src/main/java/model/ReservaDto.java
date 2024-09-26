@@ -7,8 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 public class ReservaDto {
-	private int idReserva;
-	private int idUsuario;
+	private int idReserva;	 
 	private String usuario;	
 	private VueloDto vueloDto;
 	private HotelDto hotelDto;
@@ -32,12 +31,7 @@ public class ReservaDto {
 	public void setIdReserva(int idReserva) {
 		this.idReserva = idReserva;
 	}
-	public int getIdUsuario() {
-		return idUsuario;
-	}
-	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
-	}
+
 	public String getUsuario() {
 		return usuario;
 	}

@@ -1,14 +1,12 @@
 package service;
 
  
-import java.util.List;
-
-import entities.Reserva;
+import model.ReservaDto;
 
  
 public interface ReservasService { 		
 	
-	void altaReserva(Reserva reserva);	
+	boolean altaReserva(ReservaDto reservaDto, int plazas);	
 	
 	
  ;

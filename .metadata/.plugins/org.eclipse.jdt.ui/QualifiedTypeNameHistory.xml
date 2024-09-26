@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
     <fullyQualifiedTypeName name="dao.ReservasDao"/>
+    <fullyQualifiedTypeName name="model.ReservaDto"/>
+    <fullyQualifiedTypeName name="org.springframework.security.oauth2.jwt.Jwt"/>
 </qualifiedTypeNameHistroy>

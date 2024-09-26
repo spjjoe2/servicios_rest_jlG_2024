@@ -1,9 +1,0 @@
-server.port=8500
-server.servlet.context-path=/formacion
-url.cursos={URL_CURSOS}
-
-usuario=user1
-pwd=user1
-
-admin.user=admin
-admin.pass=admin

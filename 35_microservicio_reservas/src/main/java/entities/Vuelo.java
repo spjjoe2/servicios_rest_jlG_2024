@@ -1,5 +1,6 @@
 package entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,6 +16,7 @@ public class Vuelo {
  
 	@Id	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="idvuelo")
 	private int idVuelo;
 	
 	private String company;
